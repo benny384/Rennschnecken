@@ -52,6 +52,22 @@ public class Rennen {
 		return gewinner;
 	}
 	
+	public String getName() {
+		return name;
+	}
+
+	public int getAnzahlteilnehmer() {
+		return anzahlteilnehmer;
+	}
+
+	public ArrayList<Rennschnecke> getTeilnehmendeSchnecken() {
+		return teilnehmendeSchnecken;
+	}
+
+	public double getRennstreckeLaenge() {
+		return rennstreckeLaenge;
+	}
+
 	public void lasseSchneckeKriechen() { 
 		for(Rennschnecke schnecke : teilnehmendeSchnecken) {
 			schnecke.krieche();
